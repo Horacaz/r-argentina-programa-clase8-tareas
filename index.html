@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clase-6.css">
+    <title>Tarea - Clase 6</title>
+
+</head>
+
+<body>
+    <div>
+        <form>
+            <label for="cantidad-integrantes">Ingresá la cantidad de integrantes de tu grupo familiar:</label>
+            <input type=number id="cantidad-integrantes">
+            <input type=button value="Ingresar" id="ingresar-integrantes">
+        </form>
+    </div>
+
+    <div id="integrantes">
+    </div>
+    <div class="oculto" id="mensajes-edades">
+        <p>La mayor edad es de <strong id="edad-mayor"></strong> años.</p>
+        <p>La menor edad es de <strong id="edad-menor"></strong> años.</p>
+        <p>La edad promedio es de <strong id="edad-promedio"></strong> años.</p>
+    </div>
+    <div>
+        <form class="oculto" id="calculo-edad">
+            <input type="button" value="Calcular" id="calcular-edad">
+            <input type="button" value="Reiniciar" id="reiniciar-edad">
+        </form>
+    </div>
+    <div>
+        <form class="oculto" id="ingreso-salarios">
+            <label for="ingresar-salario">Ingresá el salario anual de cada integrante:</label>
+            <input type="button" value="Continuar" id="ingresar-salario">
+        </form>
+    </div>
+    <div id="salarios">
+    </div>
+    <div>
+        <div class="oculto" id="mensajes-salarios">
+            <p>El mayor salario anual es de <strong>$</strong><strong id="salario-anual-mayor"></strong></p>
+            <p>El menor salario anual es de <strong>$</strong><strong id="salario-anual-menor"></strong></p>
+            <p>El salario anual promedio es de <strong>$</strong><strong id="salario-anual-promedio"></strong></p>
+            <p>El salario mensual promedio es de <strong>$</strong><strong id="salario-mensual-promedio"></strong></p>
+        </div>
+        <form>
+            <input class="oculto" type="button" value="Calcular" id="calcular-salarios">
+            <input class="oculto" type="button" value="Reiniciar" id="reiniciar-salarios">
+        </form>
+    </div>
+
+
+</body>
+<script src="tarea-clase-6-calculos.js"></script>
+<script src="tarea-clase-6.js"></script>
+
+</html>
